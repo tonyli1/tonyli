@@ -69,8 +69,17 @@ a, a:hover {
   display: block;
 }
 
+.center-vid {
+  width: 80%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .portfolio-icon {
   max-height: 75px;
+  max-width: 100%;
 }
 
 .download-btn {
