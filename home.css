@@ -10,6 +10,10 @@ body, html {
   font-size: 15px;
 }
 
+a, a:hover {
+  color: inherit;
+}
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
@@ -61,6 +65,16 @@ body, html {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+.portfolio-icon {
+  max-height: 75px;
+}
+
+.download-btn {
+  background-color: rgb(29, 29, 29);
+  border-color: rgb(200, 200, 200);
+  color: rgb(200, 200, 200);
 }
 
 /* .top {

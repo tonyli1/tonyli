@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="home.css">
 </head>
 <body>
@@ -22,6 +23,7 @@
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="assets/2022_Public_Resume.pdf" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-download"></i> RESUME</a>
     <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
     </a> -->
@@ -32,6 +34,7 @@
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="assets/2022_Public_Resume.pdf" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-download"></i> RESUME</a>
     <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
   </div>
 </div>
@@ -112,19 +115,26 @@
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m6">
-      <a href="portfolio/tweetch.html">
-        <img src="assets/tweetch_logo.png" style="width:100%" onclick="" class="w3-hover-opacity" alt="Tweetch: community in live streaming gaming">
+      <a href="404.html">
+        <img src="assets/tweetch_logo.png" onclick="" class="w3-hover-opacity portfolio-icon" alt="Tweetch: community in live streaming gaming">
       </a>
     </div>
 
     <div class="w3-col m6">
       <a href="404.html">
-        <img src="assets/wa_notify.png" style="width:100%" onclick="" class="w3-hover-opacity" alt="Washington Notify: reporting positive COVID test results">
+        <img src="assets/wa_notify.png" onclick="" class="w3-hover-opacity portfolio-icon" alt="Washington Notify: reporting positive COVID test results">
       </a>
     </div>
 
     <!-- <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
   </div>
+
+  <div class="w3-content w3-container w3-padding-64 center-text">
+    <a href="assets/2022_Public_Resume.pdf" class="btn btn-lg btn-light download-btn" role="button" download>
+        Download My Resume
+    </a>
+  </div>
+  
 </div>
 
 <!-- Modal for full size images on click-->
