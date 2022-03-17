@@ -26,3 +26,64 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+function scrollFade() {
+    const scrollOffset = 300;
+ 
+    const scrollElements = document.querySelectorAll(".js-scroll");
+
+    if (window.getComputedStyle(scrollElements[0]).transition == "none") {
+        return;
+    }
+    
+    const elementInView = (el, offset = 0) => {
+        const elementTop = el.getBoundingClientRect().top;
+        
+        return (
+            elementTop <= 
+            ((window.innerHeight || document.documentElement.clientHeight) - offset)
+        );
+    };
+    
+    const displayScrollElement = (scrollElement) => {
+        scrollElement.classList.add('scrolled');
+    }
+    
+    const hideScrollElement = (scrollElement) => {
+        scrollElement.classList.remove('scrolled');
+    }
+    
+    const handleScrollAnimation = (scrollElements) => {
+        scrollElements.forEach(scrollElement => {
+            if (elementInView(scrollElement, scrollOffset)) {
+                displayScrollElement(scrollElement);
+            } else {
+                hideScrollElement(scrollElement);
+            }
+        })
+    }
+
+    //initialize throttleTimer as false
+    let throttleTimer = false;
+    
+    const throttle = (callback, time) => {
+        //don't run the function while throttle timer is true
+        if (throttleTimer) return;
+        
+        //first set throttle timer to true so the function doesn't run
+        throttleTimer = true;
+        
+        setTimeout(() => {
+            //call the callback function in the setTimeout and set the throttle timer to false after the indicated time has passed 
+            callback;
+            throttleTimer = false;
+        }, time);
+    }
+    
+    window.addEventListener('scroll', () => {
+        throttle(handleScrollAnimation(scrollElements), 250);
+    })
+
+    return;
+}
+scrollFade()

@@ -45,11 +45,25 @@ a, a:hover {
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
-/* Turn off parallax scrolling for tablets and phones */
+.js-scroll {
+  opacity: 0;
+  transition: opacity 800ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+/* Turn off parallax scrolling and fade scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
     min-height: 400px;
+  }
+
+  .js-scroll {
+    opacity: 1;
+    transition: none;
   }
 }
 
@@ -63,7 +77,6 @@ a, a:hover {
 }
 
 .center-img {
-  width: 30%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -78,6 +91,30 @@ a, a:hover {
   background-color: rgb(29, 29, 29);
   border-color: rgb(200, 200, 200);
   color: rgb(200, 200, 200);
+}
+
+.carousel-img {
+  height: 400px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  opacity: 0.6;
+}
+
+.theme-caption {
+  color: #fff;
+  text-shadow: 1px 1px rgb(29, 29, 29);
+  font-weight: bold;
+}
+
+.js-scroll {
+  opacity: 0;
+  transition: opacity 800ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
 }
 
 /* .top {
