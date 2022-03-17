@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Tweetch</title>
 <meta charset="UTF-8">
@@ -8,31 +8,395 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="../home.css">
+<link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
-  <div class="w3-bar">
+  <div class="w3-bar" id="myNavbar">
     <a href="../index.html#portfolio" class="w3-bar-item w3-button"><i class="fa fa-arrow-left"></i> Back to Portfolio</a>
   </div>
 </div>
 
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64">
-  <h3 class="w3-center">Tweetch Platform</h3>
-  <p class="w3-center"><em>Building Community in Live Stream Gaming</em></p>
+<!-- Header -->
+<div class="w3-content w3-container w3-padding-64" id="header">
+  <h1 class="w3-center">Tweetch Platform</h1>
+  <p class="w3-center"><em>Building Community in Livestream Gaming</em></p>
   <p>
-    As part of a graduate course in User Centered Design, in Autumn 2021, our team of 4 from the University of Washington’s
-    HCDE 518 Masters program had 8 weeks to design a solution that fosters and promotes community for online livestreaming
+    As part of a graduate course in User Centered Design, in Autumn 2021, our team of 4 from the University of Washington's
+    HCDE Masters program had 8 weeks to design a solution that fosters and promotes community for online livestreaming
     audiences.
   </p>
-  <!-- <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
-    </div> -->
+</div>
+
+<!-- Overview -->
+<div class="w3-content w3-container w3-padding-64" id="overview">
+  <h2 class="w3-center">Overview</h2><br>
+
+  <div class="w3-row">
+    <div class="w3-col m4 w3-padding-small">
+      <h4 class="w3-center">Design Problem</h4>
+      <p>How can virtual communication in livestreaming platforms be improved with different techniques to foster better
+        community between game viewers?</p>
+    </div>
+    <div class="w3-col m8 w3-padding-small">
+      <h4 class="w3-center">Motivation</h4>
+      <p>With the COVID-19 pandemic limiting the ability for people to meet and connect with each other in person,
+        gamers resorted to watching livestream videos of video games to stay connected with one another. Our
+        team wanted to explore how to improve the experience of creating community for gamers who watch livestreams.</p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-col m3 w3-padding-small">
+      <h4 class="w3-center">Group Members</h4>
+      <ul>
+        <li>John Strohschein</li>
+        <li>Nathan Ball</li>
+        <li>Nick Moolenijzer</li>
+        <li>Tony Li</li>
+      </ul>
+    </div>
+    <div class="w3-col m9 w3-padding-small">
+      <h4 class="w3-center">Final Presentation</h4>
+      <iframe src="https://www.youtube.com/embed/yHKCsQm6bLc" class="center-vid"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Hypothesis -->
+<div class="w3-content w3-container w3-padding-64" id="hypothesis">
+  <h2 class="w3-center">Hypothesis</h2>
+  <p>
+    Gaming livestreams are a valuable way to find others with similar interests, but toxicity and an
+    overwhelming number of messages are some factors that are holding the livestreaming platforms
+    back from building stronger communities.
+  </p>
+  <p>
+    Thus, we hypothesized a platform that allows user to engage with other viewers of similar interests while filtering
+    spam and toxic messages would improve community-building between livestream viewers.
+  </p>
+</div>
+
+<!-- Methods -->
+<div class="w3-content w3-container w3-padding-64" id="methods">
+  <h2 class="w3-center">Methods</h2>
+  <div class="w3-row">
+    <p>
+      Using an Agile approach, we designed a Figma prototype to allow users to block certain users, invite
+      friends to private and public group chats within a stream, and filter patterns of unwanted language from chats.
+    </p>
+    <p>
+      Top methods used: <b>interviews, surveys, design ethnographies, design studio, wireframes, and prototypes.</b>
+      <!-- <ul>
+        <li>Interviews</li>
+        <li>Surveys</li>
+        <li>Design Ethnographies</li>
+        <li>Design Studio</li>
+        <li>Wireframes</li>
+        <li>Prototypes</li>
+      </ul> -->
+    </p>
+  </div>
+</div>
+
+<!-- Research -->
+<div class="w3-content w3-container w3-padding-64" id="research">
+  <h2 class="w3-center">Research</h2>
+
+  <div class="w3-row">
+    <div class="w3-col m8 w3-padding-small">
+      <h4 class="w3-center">Survey</h4>
+      <p>
+        We launched a survey on Reddit and on UW's Slack to gather preliminary data about livestream viewers. We
+        asked about usage of livestreaming platforms, content watched, and interactions in livestreams to learn
+        about current interactions and what areas to focus on.
+      </p>
+      <p>
+        From the 22 responses we received, most respondents watched livestreams on Twitch, with Gaming and eSports
+        being the top two categories watched. Most watched on their mobile phone, by themselves. Most reported having
+        interacted with other viewers on the streams, but a group of respondents mentioned not chatting at all. 
+      </p>
+    </div>
+    <div class="w3-col m4 w3-padding-small">
+      <img src="assets/tweetch/tweetch_survey.png" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot" alt="Survey results: most respondents used Twitch for watching livestreams">
+    </div>
+  </div>
+  <br>
+
+  <div class="w3-row">
+    <div class="w3-col m4 w3-padding-small">
+      <img src="assets/tweetch/tweetch_interview.png" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot" alt="Interview screenshot: Tony interviewing a participant on a video call">
+    </div>
+    <div class="w3-col m8 w3-padding-small">
+      <h4 class="w3-center">Interviewing</h4>
+      <p>
+        We interviewed six livestream viewers to gather more information on user expectations for a stream, user moods
+        and feelings with different interactions, and walkthroughs of the livestream experience in general, to provide
+        insight on challenges.
+      </p>
+    </div>
+  </div>
+  <br>
+
+  <div class="w3-row">
+    <div class="w3-col m8 w3-padding-small">
+      <h4 class="w3-center">Design Ethnography</h4>
+      <p>
+        We also observed user interactions during an eSports livestream watch party on Twitch, to observe and feel how
+        gamers watch livestream events and interact with each other. We observed different streams ranging from tens to
+        tens of thousands of concurrent viewers.
+      </p>
+    </div>
+    <div class="w3-col m4 w3-padding-small">
+      <img src="assets/tweetch/twitch_screenshot.png" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot" alt="Screenshot of Twitch stream observed with nearly 30 thousand viewers">
+    </div>
+  </div>
+</div>
+
+<!-- Defining the Problem/Solution -->
+<div class="w3-content w3-container w3-padding-64" id="problem">
+  <h2 class="w3-center">Defining the Problem and Solution</h2>
+  <br>
+  <div class="w3-row">
+    <h3 class="w3-center">Personas and Problems</h3>
+    <p>
+      From our research, we identified 3 main personas, each with their unique issues. <i>This was especially <b>eye-opening</b> for me,
+      as it helped me better understand the diversity of needs and interests of the target audience, even from our relatively small sample sizes.</i>
+    </p>
+    <div class="w3-col m4 w3-padding-small">
+      <h4 class="w3-center">Casual Kyle: The Casual Viewer</h4>
+      <img src="assets/tweetch/persona_1.jfif" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot" alt="Persona profile of Casual Kyle: watches for fun, watches their friends">
+      <p>
+        Casual Kyle has trouble tracking chats and doesn't appreciate offensive or explicit language. Would benefit from filtering/muting chat messages
+        based on message type or user profile.
+      </p>
+    </div>
+    <div class="w3-col m4 w3-padding-small">
+      <h4 class="w3-center">Hardcore Henry: The Extreme Viewer</h4>
+      <img src="assets/tweetch/persona_2.jfif" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot" alt="Persona profile of Hardcore Henry: watches the pros to improve their own gaming">
+      <p>
+        Hardcore Henry is focused on conversations about gameplay and skill. Would benefit from focused chat subchannels.
+      </p>
+    </div>
+    <div class="w3-col m4 w3-padding-small">
+      <h4 class="w3-center">Lurking Lily: The Lurker</h4>
+      <img src="assets/tweetch/persona_3.jfif" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot" alt="Persona profile of Lurking Lily: watches but doesn't interact">
+      <p>
+        Lurking Lily doesn't want to engage with strangers but wants to be in the loop. Would benefit from a private chat space with known friends.
+      </p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <h3 class="w3-center">Storyboards and User Flow Diagrams</h3>
+    <p> Our team created a set of storyboards and user flows to understand how our personas would use our design solution. <i>I found this much easier with our personas defined -
+      my first taste of the power of personas!</i></p>
+    <div class="w3-col m4 w3-padding-small">
+      <img src="assets/tweetch/storyboard_1.png" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot" alt="Storyboard: Casual Kyle blocking toxic messages from chat">
+    </div>
+    <div class="w3-col m4 w3-padding-small">
+      <img src="assets/tweetch/storyboard_3.png" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot" alt="Storyboard: Lurking Lily creating a private group chat she's comfortable with">
+    </div>
+    <div class="w3-col m4 w3-padding-small">
+      <img src="assets/tweetch/storyboard_4.jpg" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot" alt="Storyboard: Hardcore Henry narrowing down the chat to find and create his own subcommunity">
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-padding-small">
+      <img src="assets/tweetch/flow_1.png" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot" alt="User Flow: Blocking and filtering toxic messages from chat">
+      <img src="assets/tweetch/flow_3.png" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot" alt="User Flow: Companion mode - switching between TV and mobile. Ultimately did not get a chance to prototype this.">
+    </div>
+    <div class="w3-col m6 w3-padding-small">
+      <img src="assets/tweetch/flow_2.png" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot" style="max-height: 600px;" alt="User Flow: User groups within chat">
+    </div>
+  </div>
+</div>
+      
+<!-- Visual Design -->
+<div class="w3-content w3-container w3-padding-64" id="design">
+  <h2 class="w3-center">Visual Design</h2>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-padding-small">
+      <h3 class="w3-center">Design Studio, Sketches, and Wireframes</h3>
+      <p>
+        Our team conducted 5-minute design studio exercised to sketch potential design layouts based on our understandings of the problem from our personal research 
+        and from competitor research. <i>I had created wireframes before, but usually not so many so quickly! This was important to get the bare essentials recorded.</i>
+      </p>
+      <p>
+        From our design studio, we identified the key themes and functions to incorporate into our design, creating wireframes from those sketches and flows to show
+        how users would interact with our system. <i>Also my first time using Figma for wireframing/prototyping...</i>
+      </p>
+    </div>
+    <div class="w3-col m6 w3-padding-small">
+      <img src="assets/tweetch/sketch_1.png" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot" alt="Sketch: Landing page and stream discovery page">
+    </div>
+  </div>
+  <div class="w3-row">
+    <div class="w3-col m12 w3-padding-small w3-center">
+      <img src="assets/tweetch/wireframes_1.jfif" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot" alt="Wireframes in Figma: Some of the wireframe pages to be used in the prototype">
+    </div>
+  </div>
+  <br>
+
+  <div class="w3-row">
+    <div class="w3-col m12 w3-padding-small">
+      <h3 class="center-text">Mockup/Prototype</h3>
+      <p>
+        We then created mockups and a prototype for usability testing. We aimed to keep consistency with user expectations for a livestreaming platform and a
+        user-friendly design without needing to teach users how to use the app.
+      </p>
+      <div class="center-text">
+        <a href="https://www.figma.com/proto/8e9Mr4V6K4MSTw0zijoue7/Chat-Prototype?node-id=143%3A4&page-id=143%3A2&scaling=contain&starting-point-node-id=143%3A4" class="btn btn-lg btn-light theme-btn" role="button">
+          View Preliminary Prototype
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Usability Testing -->
+<div class="w3-content w3-container w3-padding-64" id="usability">
+  <div class="w3-row">
+    <h2 class="w3-center">Usability Testing and Iteration</h2>
+    <div class="w3-col m4 w3-padding-small">
+      <img src="assets/tweetch/usability_1.jpg" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot" alt="Usability testing our prototype with participants">
+    </div>
+    <div class="w3-col m8 w3-padding-small">
+      <h3 class="center-text">Usability Testing</h3>
+      <p>
+        Our team created a usability test plan that outlined purpose, user tasks, and our approach. This allowed us to test users and provide design insights to update the prototype.
+      </p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <h3 class="center-text">Design Iteration</h3>
+
+    <div id="designIterationCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#designIterationCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#designIterationCarousel" data-slide-to="1"></li>
+        <li data-target="#designIterationCarousel" data-slide-to="2"></li>
+        <li data-target="#designIterationCarousel" data-slide-to="3"></li>
+      </ol>
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="assets/tweetch/iteration_1.jfif" alt="Iteration 1: Fewer and simpler icons">
+          <div class="carousel-caption">
+            <h3>Fewer and Simpler Icons</h3>
+            <p>Reduce affordances with clicking icons by differentiating, combining, or disambiguating placements. Almost all participants were confused about the social icon.</p>
+          </div>
+        </div>
+    
+        <div class="item">
+          <img src="assets/tweetch/iteration_2.jfif" alt="Iteration 2: Easy and quick mute actions">
+          <div class="carousel-caption">
+            <h3>Easy and Quick Muting</h3>
+            <p>Hovering is faster than clicking, with lower barrier to discover and perform.</p>
+          </div>
+        </div>
+    
+        <div class="item">
+          <img src="assets/tweetch/iteration_3.jfif" alt="Iteration 3: Clear and deliberate interactions for actions with greater commitment">
+          <div class="carousel-caption">
+            <h3> Clear/Deliberate Interactions If Requires Greater Commitment</h3>
+            <p>Users were notably distressed by immediate payment options after exploring donate feature.</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="assets/tweetch/iteration_4.jfif" alt="Iteration 4: Flexible views">
+          <div class="carousel-caption">
+            <h3> Flexible Views</h3>
+            <p>Personalize the viewing experience for different needs/goals.</p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#designIterationCarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#designIterationCarousel" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </div>
+
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div class="w3-col m4 w3-padding-small">
+      <a href="https://www.figma.com/proto/8e9Mr4V6K4MSTw0zijoue7/Chat-Prototype?page-id=241%3A3&node-id=241%3A5&viewport=241%2C48%2C0.09&scaling=contain&starting-point-node-id=241%3A5">
+        <img src="assets/tweetch/tweetch_demo.gif" class="w3-hover-opacity portfolio-screenshot" alt="Tweetch prototype screenshots">
+      </a>
+      <!-- <p>
+        Prototype includes the following features: hide the chat, create and invite friends into private or public chat rooms,
+        mute toxic individuals, and set settings to remove explicit language from the chat.
+      </p> -->
+      <div class="center-text">
+        <a href="https://www.figma.com/proto/8e9Mr4V6K4MSTw0zijoue7/Chat-Prototype?page-id=241%3A3&node-id=241%3A5&viewport=241%2C48%2C0.09&scaling=contain&starting-point-node-id=241%3A5" class="btn btn-lg btn-light theme-btn" role="button">
+          View Prototype
+        </a>
+      </div>
+    </div>
+    <div class="w3-col m5 w3-padding-large">
+
+    </div>
+    
+  </div>
+  <div class="w3-row">
+      <p>
+        With the covid pandemic limiting the ability for people to meet and connect with each other in person,
+        gamers resorted to watching livestream videos of video games to stay connected with one another. Our
+        team wanted to explore <i>how virtual communication in livestreaming platforms can be improved with different
+        techniques to foster better community between game viewers.</i>
+      </p>
+      <p>
+        Our team identified via research that video stream watchers experienced the following pain points:</p>
+      <ol>
+        <li>Viewers who watched popular streams with over 100 viewers were overwhelmed with the number of messages in the chat.</li>
+        <li>Viewers wanted ways to interact with others who they knew or who had similar topics and interests when watching a stream.</li>
+        <li>Viewers were turned off from interacting with others by toxic messages and bots in the stream chat.</li>
+      </ol>
+      <p>
+        By identifying these painpoints, our team created a design solution (Tweetch.com) that modifies the livestreaming
+        platform template to allow the following features to foster and develop community among livestream viewers:
+      </p>
+      <ol>
+        <li>The ability to join and create individual channels within a livestream to find and chat with friends or viewers of similar topic interests.</li>
+        <li>The ability to block and mute users, emojis, and unwanted messages from your view of the chat.</li>
+        <li>The ability to hide unwanted features on the screen such as hiding the chat from view.</li>
+        <li>The ability to donate and interact with streamers during the livestream.</li>
+      </ol>
+      <p>
+        Research conducted: <b>Surveys, interviews, & design ethnographies</b>
+      </p>
+    </div>
 
     <!-- Hide this text on small devices -->
     <!-- <div class="w3-col m6 w3-hide-small w3-padding-large">
@@ -67,7 +431,7 @@
       <img src="/assets/tweetch_logo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
     </div> -->
 
-    <div class="w3-col m3">
+    <!-- <div class="w3-col m3">
       <a href="portfolio/tweetch.html">
         <img src="/assets/tweetch_logo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
       </a>
@@ -79,10 +443,10 @@
 
     <div class="w3-col m3">
       <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
+    </div> -->
   </div>
 
-  <div class="w3-row-padding w3-center w3-section">
+  <!-- <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
       <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
     </div>
@@ -99,7 +463,7 @@
       <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
     </div>
     <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-  </div>
+  </div> -->
 </div>
 
 <!-- Modal for full size images on click-->
@@ -111,10 +475,6 @@
   </div>
 </div>
 
-<div class="w3-content w3-container w3-padding-64">
-  <iframe src="https://www.youtube.com/embed/yHKCsQm6bLc" class="center-vid"></iframe>
-</div>
-
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity">
@@ -122,6 +482,8 @@
 </footer>
  
 <script src="../home.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

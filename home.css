@@ -69,20 +69,12 @@ a, a:hover {
   display: block;
 }
 
-.center-vid {
-  width: 80%;
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
 .portfolio-icon {
   max-height: 75px;
   max-width: 100%;
 }
 
-.download-btn {
+.theme-btn {
   background-color: rgb(29, 29, 29);
   border-color: rgb(200, 200, 200);
   color: rgb(200, 200, 200);
