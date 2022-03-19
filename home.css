@@ -63,7 +63,7 @@ a, a:hover {
 
   .js-scroll {
     opacity: 1;
-    transition: none;
+    transition: none!important;
   }
 }
 

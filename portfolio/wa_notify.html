@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>WA Notify</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../assets/iron-man-50.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="../home.css">
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a href="../index.html#portfolio" class="w3-bar-item w3-button"><i class="fa fa-arrow-left"></i> Back to Portfolio</a>
+  </div>
+</div>
+
+<!-- Header -->
+<div class="w3-content w3-container w3-padding-32" id="header">
+  <h1 class="w3-center">Washington Exposure Notifications</h1>
+  <p class="w3-center"><em>User Testing for Self Declaration Feature</em></p>
+  <p>
+    As part of a graduate course in User Centered Design in Winter 2022, our team of 5 from the University of Washington's
+    HCDE Masters program had 9 weeks to design and run usability testing for WA Notify's self declaration feature, which
+    allows users to report positive COVID-19 test results and send exposure notifications to other users who were in recently
+    in close proximity to them. This was in partnership with UW's Clinical Informatics Research Group and the Washington State
+    Department of Health for the WA Notify app, also known as WA Exposure Notifications.
+  </p>
+</div>
+
+<!-- Overview -->
+<div class="w3-content w3-container w3-padding-32" id="overview">
+  <div class="w3-row">
+    <div class="w3-col m9 w3-padding-small">
+      <h2 class="w3-center">Overview</h2>
+    <img src="assets/wa_notify/process_overview.png" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot center-img" alt="Overview of WA Notify: Notifies Washington residents of potential exposure to anonymous users who test positive for COVID-19">
+    </div>
+    <div class="w3-col m3 w3-padding-small">
+      <br>
+      <h4 class="w3-center">Group Members</h4>
+      <ul>
+        <li>Jennifer Rodriguez</li>
+        <li>Luka Sherman</li>
+        <li>Taekyeung Lim</li>
+        <li>Tiffany Wang</li>
+        <li>Tony Li</li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-padding-small">
+      <h4 class="w3-center">Research Question</h4>
+      <p class="w3-center">What barriers prevent people from reporting positive COVID-19 test results in WA Notify?</p>
+    </div>
+    <div class="w3-col m6 w3-padding-small">
+      <h4 class="w3-center">Motivation</h4>
+      <p>Through our UW HCDE class, the WA Notify client team asked for help with gathering feedback about their new self declaration
+        feature.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Summary -->
+<div class="w3-content w3-container w3-padding-32 js-scroll" id="summary">
+  <div class="w3-row">    
+    <h4 class="w3-center">Executive Summary</h4>
+    <table class="table">
+      <tr>
+        <th>Question</th>
+        <th>Summary Insights</th>
+      </tr>
+      <tr>
+        <td>How are users learning about the self-reporting feature in the app?</td>
+        <td>For participants who had heard of WA Notify, they learned a while ago from news articles, UW
+          communications, social media, and vaccine/test sites, but few participants expressed knowledge
+          of the self-reporting feature or recent updates to the app.</td>
+      </tr>
+      <tr>
+        <td>How easily do users input positive test results into WA Notify?</td>
+        <td>Most participants found the interface intuitive and easy to follow to accomplish this goal.</td>
+      </tr>
+      <tr>
+        <td>What are some key barriers that are stopping users from reporting their positive results?</td>
+        <td>Many participants expressed privacy concerns and effectiveness of the feature to be key barriers to reporting their positive results.</td>
+      </tr>
+      <tr>
+        <td>What are people worried about before they are willing to share that they are positive (and are there any information gaps)?</td>
+        <td>Several participants expressed concern and confusion over what data was being collected and if anonymity would be ensured.</td>
+      </tr>
+      <tr>
+        <td>Is the interface intuitive?</td>
+        <td>The interface of the self declaration feature appeared straightforward and seamless to follow for participants, partly based on UI familiarity.</td>
+      </tr>
+      <tr>
+        <td>Is the level of documentation and messaging on how to use the interface appropriate?</td>
+        <td>Several participants expressed confusion over technical terms for the process as well as what information would be shared.</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<!-- Methods -->
+<div class="w3-content w3-container w3-padding-32 js-scroll" id="methods">
+  <h2 class="w3-center">Methods</h2>
+  <p>
+    We conducted a user study for each OS, 5 participants for each.
+  </p>
+  <img src="assets/wa_notify/design_process.png" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot"
+    alt="Overview: interaction map, prototype, recruit, run pilots, moderated usability tests, analyze results, compile report">
+</div>
+
+<!-- Interaction Maps and Prototypes -->
+<div class="w3-content w3-container w3-padding-32 js-scroll" id="prototypes">
+  <h4 class="w3-center">Interaction Maps and Prototypes</h4>
+    <div class="w3-row">
+    <p>
+      After working with the client to form the research questions, our team created two <b>interaction maps</b> based on
+      the user flow, one map for each of the mobile OS's (iOS and Android).
+    </p>
+    <div class="center-text">
+      <a href="assets/wa_notify/android_interaction_map.jpg" class="btn btn-lg btn-light theme-btn" role="button">
+        View Android Interaction Map
+      </a>
+      <a href="assets/wa_notify/ios_interaction_map.jpg" class="btn btn-lg btn-light theme-btn" role="button">
+        View iOS Interaction Map
+      </a>
+    </div>
+    <br>
+  </div>
+  <div class="w3-row">
+    <p>
+      Based on these flows, we created a digital prototype in Figma for each OS and devised a study kit including the following items:
+      screening questionnaire, communications template, facilitations scripts for interviews, consent agreement, pre- and post-test
+      questionnaires, data collection methods of recording calls, and templates to document responses (including standardized Likert
+      scales for the post-test questions).
+    </p>
+    <div class="center-text">
+      <a href="https://www.figma.com/proto/N4fci6R1L9TCr39mRdkt2d/Android-Prototype?page-id=0%3A1&node-id=69%3A180&viewport=306%2C48%2C0.39&scaling=scale-down&starting-point-node-id=69%3A180&show-proto-sidebar=1" class="btn btn-lg btn-light theme-btn" role="button">
+        View Android Prototype
+      </a>
+      <a href="https://www.figma.com/proto/17bZGPVpFBZe4SC4E88Cir/IOS-Prototype?page-id=0%3A1&node-id=65%3A331&viewport=306%2C48%2C0.15&scaling=scale-down&starting-point-node-id=65%3A331&show-proto-sidebar=1" class="btn btn-lg btn-light theme-btn" role="button">
+        View iOS Prototype
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Interview -->
+<div class="w3-content w3-container w3-padding-32 js-scroll" id="interview">
+  <h4 class="w3-center">Interviewing</h4>
+  <div class="w3-row">
+    <p>
+      For recruitment, we utilized UserTesting and a convernience sample of personal connections, screening for the following:
+      participants who lived in Washington state during the COVID-19 pandemic, used English as their personal phone's system
+      language (since our prototype was in English), and used an iOS or Android as their primary personal phone.
+    </p>
+    <p>
+      We conducted these semi-structured interviews online, devising two tasks for users to <b>think aloud</b> as they completed:
+      reporting an at-home positive COVID-19 test result through WA Notify, and reporting a positive test result through WA Notify
+      from a clinic that provides a verification code, utilizing the OS prototype matching the OS of their primary phone.
+    </p>
+  </div>
+  <div class="w3-row">
+    <div class="w3-col m3 w3-padding-small">
+      <img src="assets/wa_notify/screenshot_1.png" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot"
+      alt="Screenshot: WA Notify (Exposure Notifications) in iOS settings">
+    </div>
+    <div class="w3-col m3 w3-padding-small">
+      <img src="assets/wa_notify/screenshot_2.png" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot"
+      alt="Screenshot: Verification code prompt in iOS">
+    </div>
+    <div class="w3-col m3 w3-padding-small">
+      <img src="assets/wa_notify/screenshot_3.png" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot"
+      alt="Screenshot: WA Notify text message in iOS">
+    </div>
+    <div class="w3-col m3 w3-padding-small">
+      <img src="assets/wa_notify/screenshot_1.png" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot"
+      alt="Screenshot: WA Notify self declaration of positive test results">
+    </div>
+  </div>
+</div>
+
+<!-- Report -->
+<div class="w3-content w3-container w3-padding-32 js-scroll" id="report">
+  <h4 class="w3-center">Final Report and Presentation</h4>
+  <p>
+    Once we finished collecting data, we collaboratively compiled the findings and created an <b>affinity map</b> to group the findings.
+    Then we devised a system for calculating severity of each issue and finding by factoring in the following: impact criticality,
+    and frequency. These severity scores prioritized our findings, which we compiled into a report and presented to the client as
+    well as our class.
+  </p>
+  <div class="center-text">
+    <a href="assets/wa_notify/wa_notify_project_presentation.pdf" class="btn btn-lg btn-light theme-btn " role="button">
+      View Presentation PDF
+    </a>
+  </div>
+</div>
+
+<!-- Findings -->
+<div class="w3-content w3-container w3-padding-32 js-scroll" id="findings">
+  <h4 class="w3-center">Major Findings</h4>
+  <p>
+    Based on our results prioritized on severity, our team came up with a list of findings and devised a
+    number of suggestions for our client. The following are some of the key findings:
+  </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-padding-small">
+      <ul>
+        <li>The interface itself is straightforward and easy to follow.</li>
+        <li>(iOS only) Users feel comfortable usign iOS's familiar embedded functions and UI.</li>
+        <li>WA Notify's association with the State Department of Health builds trust and confidence about
+          sharing test results.
+        </li>
+        <li>User are motivated by believing they're doing an altruistic thing.</li>
+      </ul>
+    </div>
+    <div class="w3-col m6 w3-padding-small">
+      <ul>
+        <li>Wording and terminology lead to confusion about the functionality (verification code, random ID, etc).</li>
+        <li>(iOS only): Users who know about Exposure Notifications don't know where the feature is located in their phone.</li>
+        <li>Users are confused and concerned about WA-Notify's privacy policy and use of data.</li>
+        <li>Non-users are doubtful about whether the app is worthwhile (effective and worth their time).</li>
+        <li>Navigating away from WA Notify caused confusion (separate instructions for code request, context switching).</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- Discussion -->
+<div class="w3-content w3-container w3-padding-32 js-scroll" id="discussion">
+  <div class="w3-row">
+    <h2 class="center-text">Discussion</h2>
+      <i>
+      <p>
+        This was my first design project working with an external client. It was surprisingly seamless and flexible
+        working with the client's needs in the scope of an academic class project, while also exciting to
+        work on design problems in practice for tangible user needs. I would be interested to see how design
+        scope can expand beyond a class project.
+      </p>
+      <p>
+        Given more time and resources, we would have tested a larger sample size, conducted more
+        iterative testing, and worked towards a closer collaboration with the client for more in-depth testing and
+        quantitative data (such as setting up a more realistic test environment for the mobile product instead of a
+        desktop prototype).
+      </p>
+      </i>
+      
+    </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity">
+  <a href="../index.html#portfolio" class="w3-button w3-light-grey"><i class="fa fa-arrow-left"></i> Back to Portfolio</a>
+</footer>
+ 
+<script src="../home.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+  $("#designIterationCarousel").carousel();
+</script>
+</body>
+</html>
