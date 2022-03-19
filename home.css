@@ -117,6 +117,10 @@ a, a:hover {
   opacity: 1;
 }
 
+.footer-credits {
+  margin-top: 25px;
+}
+
 /* .top {
   top: 0;
   position: fixed;
