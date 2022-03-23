@@ -60,11 +60,6 @@ a, a:hover {
     background-attachment: scroll;
     min-height: 400px;
   }
-
-  .js-scroll {
-    opacity: 1;
-    transition: none!important;
-  }
 }
 
 .sticky-header {
@@ -117,6 +112,11 @@ a, a:hover {
   opacity: 1;
 }
 
+.footer-theme {
+  color: rgb(200, 200, 200);
+  background-color: rgb(21, 21, 21);
+}
+
 .footer-credits {
   margin-top: 25px;
 }
@@ -132,3 +132,7 @@ a, a:hover {
   overflow: hidden;
   width: 100%;
 } */
+
+.w3-button:hover {
+  transition: 500ms;
+}
