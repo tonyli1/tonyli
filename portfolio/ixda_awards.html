@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tweetch</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../assets/iron-man-50.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="../home.css">
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a href="../index.html#portfolio" class="w3-bar-item w3-button"><i class="fa fa-arrow-left"></i> Back to Portfolio</a>
+  </div>
+</div>
+
+<!-- Header -->
+<div class="w3-content w3-container w3-padding-32" id="header">
+  <h1 class="w3-center">IxDA Awards Site Redesign</h1>
+  <p class="w3-center"><em>User-Centered Redesign</em></p>
+  <p>
+    As part of a graduate course in User Centered Web Design, in Autumn 2021, our team of 5 from the University of Washington's
+    HCDE Masters program had 8 weeks to research and redesign IxDA's Interaction Awards website.
+  </p>
+</div>
+
+<!-- Context -->
+<section class="scroll-container"></section>
+  <div class="w3-content w3-container w3-padding-32" id="context">
+    <h2 class="w3-center">Context</h2><br>
+
+    <div class="w3-row">
+      <p>
+        The Interaction Awards was founded by the Interaction Design Association (IxDA), an international
+        member-supported organization dedicated to interaction design. The existing awards website was separate
+        from the interaction week conference site and acted as a living library of past winning projects,
+        starting from its first awards in 2012.
+      </p>
+    </div>
+
+    <div class="w3-row">
+      <h4 class="w3-center">Group Members</h4>
+      <img src="assets/ixda_awards/team.png" class="center-img" alt="Team members: Ji Su Park, Natasha Alcantra, Rosanna Liu, Tony Li, Xuefei Long">
+      <br>
+    </div>
+
+  
+    <div class="w3-row js-scroll">
+      <h4 class="w3-center">Final Presentation</h4>
+      <iframe src="assets/ixda_awards/ixda_presentation.pdf#toolbar=0" class="center-img" width="100%" height="450px"></iframe>
+    </div>
+  
+</div>
+</section>
+
+<!-- Problem -->
+<section class="scroll-container">
+<div class="w3-content w3-container w3-padding-32 js-scroll" id="problem">
+  <div class="w3-col m6 w3-padding-small">
+    <h3 class="w3-center">Key Problems</h3>
+    <ul>
+      <li>Searching for past projects is not intuitive</li>
+      <li>Elements like headlines cannot be read by screen readers for accessibility</li>
+      <li>Information on entering the competition is unclear</li>
+      <li>Social media channels are not well integrated</li>
+    </ul>
+  </div>
+  <div class="w3-col m6 w3-padding-small">
+    <h3 class="w3-center">Objective</h3>
+    <p>
+      The primary purpose of redesigning the Interaction Awards website is to create
+      a more user-friendly and accessible experience for people navigating the website.
+    </p>
+  </div>
+  
+</div>
+</section>
+
+<!-- Goals -->
+<section class="scroll-container">
+<div class="w3-content w3-container w3-padding-32 js-scroll" id="goals">
+  <div class="w3-row">
+    <h2 class="w3-center">Goals</h2>
+  
+    <div class="w3-col m4 w3-padding-small">
+      <h4 class="w3-center">Business Goals</h4>
+        <ul>
+          <li>Increase user engagement with more efficient submission/voting process</li>
+          <li>Improve searchability of website content</li>
+        </ul>
+    </div>
+    <div class="w3-col m4 w3-padding-small">
+      <h4 class="w3-center">Branding Goals</h4>
+        <ul>
+          <li>Create consistency by reducing amount of design patterns, and create
+            reusable designs</li>
+        </ul>
+    </div>
+    <div class="w3-col m4 w3-padding-small">
+      <h4 class="w3-center">Usability Goals</h4>
+        <ul>
+          <li>Simplify site navigation</li>
+          <li>Improve site accessibility</li>
+        </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Research -->
+<section class="scroll-container">
+<div class="w3-content w3-container w3-padding-32 js-scroll" id="research">
+  <h2 class="w3-center">User Research</h2>
+
+  <div class="w3-row js-scroll">
+    <h3 class="w3-center">Comparative Analysis</h3>
+    <p>
+      We started with a comparative analysis, comparing the Interaction Awards with
+      several other leading design competitions: Core77, Red Dot Design Awards, ConveyUX, and the Index Project.
+    </p>
+    <div class="w3-col m6 w3-padding-small">
+      <h4>Comparative Strength of IxDA</h4>
+        <ul>
+          <li>Rich information on projects</li>
+        </ul>
+    </div>
+    <div class="w3-col m6 w3-padding-small">
+      <h4>Areas for Improvement</h4>
+        <ul>
+          <li>Accessibility and hierarchy of text</li>
+          <li>Categorization and searchability</li>
+          <li>Visual system</li>
+          <li>Consistency</li>
+        </ul>
+    </div>
+  </div>
+
+  <div class="w3-row js-scroll">
+    <h3 class="w3-center">Personas</h3>
+    <p>
+      Based on conversations with our client about user goals and tasks,
+      as well as the client's existing personas for the IxDA conference,
+      we devised our own personas for the awards site.
+    </p>
+    <div class="w3-col m4 w3-padding-small">
+      <h4 class="w3-center">Primary Persona: Award Seeker</h4>
+      <img src="assets/ixda_awards/persona_ashley.jpg" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot" alt="Persona profile of Ashley Award: wants to develop their portfolio and be recognized for their work">
+      <!-- <p>
+        Casual Kyle has trouble tracking chats and doesn't appreciate offensive or explicit language. Would benefit from filtering/muting chat messages
+        based on message type or user profile.
+      </p> -->
+    </div>
+    <div class="w3-col m4 w3-padding-small">
+      <h4 class="w3-center">Secondary Persona: The Company Sponsor</h4>
+      <img src="assets/ixda_awards/persona_corey.jpg" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot" alt="Persona profile of Corey Corporate: wants to sponsor to boost their company">
+      <!-- <p>
+        Hardcore Henry is focused on conversations about gameplay and skill. Would benefit from focused chat subchannels.
+      </p> -->
+    </div>
+    <div class="w3-col m4 w3-padding-small">
+      <h4 class="w3-center">Tertiary Persona: The Trend Seeker</h4>
+      <img src="assets/ixda_awards/persona_trianna.jpg" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot" alt="Persona profile of Trianna Trend Seeker: wants to stay in-the-know on creative ideas and interaction technologies">
+      <!-- <p>
+        Lurking Lily doesn't want to engage with strangers but wants to be in the loop. Would benefit from a private chat space with known friends.
+      </p> -->
+    </div>
+  </div>
+  <br>
+
+  <div class="w3-row js-scroll">
+    <h3 class="w3-center">Card Sorting</h3>
+    <p>
+      Since the information architecture was an area we identified as an opportunity to improve,
+      we conducted an open card sort with 9 participants, including students from this class as
+      well as from the client team.
+    </p>
+    <div class="w3-col m6 w3-padding-small">
+      <img src="assets/ixda_awards/cardsort_matrix.png" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot center-img" alt="Similarity matrix example of card sort">
+    </div>
+    <div class="w3-col m6 w3-padding-small">
+      <img src="assets/ixda_awards/cardsort_cards.png" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot center-img" alt="Qualitative categories of card sort results, including Home, About, Submit, and Projects, among others">
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- Design Principles -->
+<section class="scroll-container">
+  <div class="w3-content w3-container w3-padding-32 js-scroll" id="design_principles">
+    <h2 class="w3-center">Design</h2>
+
+    <div class="w3-row js-scroll">
+      <h3 class="w3-center">Design Principles</h3>
+      <p>
+        Based on the research and client constraints, we came up with 4 design principles to guide our
+        project: credible, simple, visible, and accessible.
+      </p>
+      <ul>
+        <li>Credible: Build trust in the IxDA award and its website</li>
+        <li>Simple: Leave uninmportant information outside of the design</li>
+        <li>Visible: Let users know their options and how to access</li>
+        <li>Accessible: Making information digestible, and avoid jargon</li>
+      </ul>
+    </div>
+
+    <div class="w3-row js-scroll">
+      <h3 class="w3-center">Information Architecture and Wireframes</h3>
+      <div class="w3-col m4 w3-padding-small">
+        <img src="assets/ixda_awards/info_arch.png" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot center-img" alt="A partial view of the team's information architecture, based on card sort results and business goals, outlining each page and subpage, split up by award period." style="max-height: 400px;">
+      </div>
+      <div class="w3-col m4 w3-padding-small">
+        <p>
+          We also used the research results and business goals to formulate the information architecture,
+          validating with more users using tree tests. This information architecture became the basis for our
+          mockup prototype:
+        </p>
+      </div>
+      <div class="w3-col m4 w3-padding-small">
+        <img src="assets/ixda_awards/wireframes.png" onclick="onClick(this)" class="w3-hover-opacity portfolio-screenshot center-img" alt="Mockup wireframes of the prototype based on the information architecture. Tony worked on the Submit and FAQ wireframes." style="max-height: 400px;">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Usability Testing and Iteration -->
+<section class="scroll-container">
+  <div class="w3-content w3-container w3-padding-32 js-scroll" id="usability_test">
+    <h2 class="w3-center">Usability Testing and Iteration</h2>
+
+    <div class="w3-row js-scroll">
+      <h3 class="w3-center">Methods for Usability Tests</h3>
+      <p>
+        We iterated on the prototype by conducting usability tests: 3 back-to-back on the original website and
+        the prototypes, as well as 3 only on the prototype. We focused usability tasks on the primary persona.
+      </p> 
+      <p>
+        Overall, the general feedback was that the prototype was fairly easy and clear. 3 key insights:
+      </p>
+      <ul>
+        <li>Look and feel is important</li>
+        <li>Put what people want to find, where they expect it to me</li>
+        <li>Simpler is better. Make artifacts easy to find and tasks easy to do</li>
+      </ul>
+    </div>
+
+    <div class="w3-row js-scroll">
+      <h3 class="w3-center">Class Deliverable: Final(?) Prototype</h3>
+      <iframe class="center-vid" width="560" height="315" src="https://www.youtube.com/embed/OG02YATKR2I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <br>
+    
+    <div class="w3-row js-scroll">
+      <h3 class="w3-center">Design Iteration</h3>
+      <p>
+        After the course ended with the quarter, we took our design and continued working with the client to
+        iterate and see it through to implementation. We worked closely with the client's developer to mock up
+        the design and iterate on any design issues that came up in implementation.
+      </p>
+      <p>
+        We are proud to expect our design to go live on the <a href="https://awards.ixda.org/"><i>IxDA Awards website</i></a>
+        in the winter of 2022!
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-64 footer-theme">
+  <a href="../index.html#portfolio" class="btn btn-lg btn-light theme-btn"><i class="fa fa-arrow-left"></i> Back to Portfolio</a>
+  <p class="footer-credits">Designed and coded by Tony Li, with templates and styles adapted from W3 and Bootstrap.</p>
+</footer>
+ 
+<script src="../home.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+  $("#designIterationCarousel").carousel();
+</script>
+</body>
+</html>
