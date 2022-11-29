@@ -17,7 +17,7 @@ a, a:hover {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,14 +30,20 @@ a, a:hover {
   min-height: 100%;
 }
 
-/* Second image (Portfolio) */
+/* Second image (Publications) */
 .bgimg-2 {
+  background-image: url("assets/rainier_marmot.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Portfolio) */
+.bgimg-3 {
   background-image: url("assets/white_sands.jpg");
   min-height: 400px;
 }
 
-/* Third image (Contact) */
-.bgimg-3 {
+/* Fourth image (Contact) */
+.bgimg-4 {
   background-image: url("assets/crater.jpg");
   min-height: 400px;
 }
@@ -56,7 +62,7 @@ a, a:hover {
 
 /* Turn off parallax scrolling and fade scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: scroll;
     min-height: 400px;
   }
