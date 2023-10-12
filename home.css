@@ -12,7 +12,7 @@ body, html {
 
 a, a:hover {
   color: inherit;
-  text-decoration: inherit;
+  text-decoration: underline;
   cursor: pointer;
 }
 
