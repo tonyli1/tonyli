@@ -4,9 +4,9 @@ body,h1,h2,h3,h4,h5,h6 {
 
 body, html {
   height: 100%;
-  color: rgb(200, 200, 200);
+  color: rgb(220, 220, 220);
   line-height: 1.8;
-  background-color: rgb(29, 29, 29);
+  background-color: rgb(7, 7, 7);
   font-size: 15px;
 }
 
@@ -69,8 +69,8 @@ a, a:hover {
 }
 
 .sticky-header {
-  color: rgb(200, 200, 200);
-  background-color: rgb(21, 21, 21);
+  color: rgb(142, 184, 229);
+  background-color: rgb(7, 7, 7);
 }
 
 .center-text {
@@ -90,9 +90,9 @@ a, a:hover {
 }
 
 .theme-btn {
-  background-color: rgb(29, 29, 29);
-  border-color: rgb(200, 200, 200);
-  color: rgb(200, 200, 200);
+  background-color: rgb(7, 7, 7);
+  border-color: rgb(220, 220, 220);
+  color: rgb(220, 220, 220);
 }
 
 .carousel-img {
@@ -120,7 +120,7 @@ a, a:hover {
 }
 
 .footer-theme {
-  color: rgb(200, 200, 200);
+  color: rgb(220, 220, 220);
   background-color: rgb(21, 21, 21);
 }
 
@@ -143,3 +143,20 @@ a, a:hover {
 .w3-button:hover {
   transition: 500ms;
 }
+
+.theme_color {
+  color: rgb(142, 184, 229);
+  
+}
+
+.accent_color {
+  color: rgb(200, 160, 0);
+}
+
+.tertiary_color {
+  color: rgb(207, 92, 54);
+}
+
+/* #myNavbar .w3-button {
+  color: rgb(142, 184, 229);
+} */
